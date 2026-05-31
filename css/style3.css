@@ -1,0 +1,28 @@
+body{
+
+    font-size : 36px;
+    font-family: 'Times New Roman', Times, serif;
+line-height: 1.8;
+
+/* both are qual */ 
+background: rgb(54, 54, 169);
+background-color: burlywood;
+
+color: brown;
+color: hsl(50, 16%, 50%);
+/* red green blue
+
+here rgba in this a means transfernce
+
+#000000 = Black 
+#FFFFFF = White 
+
+we can only use 0-9 and A-F
+ff0000 means red is high 00 second means green zero and blue is also zero  00 
+*/
+
+p{
+    color :rgba(33,45,67,0.5);
+}
+  
+}
