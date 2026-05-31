@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* 1. Attribute Selector */
+a[target="_blank"]{
+    color:red;
+}
+
+/* 2. Hover Pseudo Class */
+button:hover{
+    background:black;
+    color:white;
+}
+
+/* 3. Focus Pseudo Class */
+input:focus{
+    border:2px solid blue;
+    outline:none;
+}
+
+/* 4. First Child */
+li:first-child{
+    color:red;
+}
+
+/* 5. Last Child */
+li:last-child{
+    color:blue;
+}
+
+/* 6. Nth Child */
+li:nth-child(2){
+    color:green;
+}
+
+/* Even rows in table */
+tr:nth-child(even){
+    background:#a7d134;
+}
+
+/* 7. Before Pseudo Element */
+.before-demo::before{
+    content:"👉 ";
+}
+
+/* 8. After Pseudo Element */
+.after-demo::after{
+    content:" ✔";
+}
+
+/* 9. First Letter */
+.first-letter-demo::first-letter{
+    font-size:30px;
+    font-weight:bold;
+}
+
+</style>
+</head>
+<body>
+
+    <!-- Attribute Selector -->
+    <h2>Attribute Selector</h2>
+    <a href="https://google.com" target="_blank">
+        Open Google
+    </a>
+
+    <hr>
+
+    <!-- Hover Example -->
+    <h2>Hover Example</h2>
+    <button>Move Mouse Here</button>
+
+    <hr>
+
+    <!-- Focus Example -->
+    <h2>Focus Example</h2>
+    <input type="text" placeholder="Click Here">
+
+    <hr>
+
+    <!-- first-child, last-child, nth-child -->
+    <h2>List Example</h2>
+    <ul>
+        <li>First Item</li>   <!-- Red -->
+        <li>Second Item</li>  <!-- Green -->
+        <li>Third Item</li>
+        <li>Last Item</li>    <!-- Blue -->
+    </ul>
+
+    <hr>
+
+    <!-- nth-child(even) -->
+    <h2>Table Example</h2>
+    <table border="1">
+        <tr>
+            <td>Row 1</td>
+        </tr>
+        <tr>
+            <td>Row 2</td>
+        </tr>
+        <tr>
+            <td>Row 3</td>
+        </tr>
+        <tr>
+            <td>Row 4</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- ::before -->
+    <p class="before-demo">
+        Before Example
+    </p>
+
+    <!-- ::after -->
+    <p class="after-demo">
+        Task Completed
+    </p>
+
+    <!-- ::first-letter -->
+    <p class="first-letter-demo">
+        Frontend development is awesome.
+    </p>
+
+</body>
+</html>
