@@ -1,0 +1,44 @@
+*{
+
+    margin : 0;
+    padding : 0;
+    box-sizzing: border-box;
+}
+body{
+    width :100%;
+
+    /* usin 100pw(for width) 100vh(for height)we have one scroll bar in bottom side but instead of this we can be able to use 100% */
+}
+
+main{
+
+    width :50vw;
+    background-color: aqua;
+}
+
+
+header{
+    width:50%
+}
+
+
+h1{
+border: 2px dashed red;
+width:35%;
+font-size: 3rem;
+padding: 0.5em;
+}
+
+
+p{
+
+    font-size: 1.5rem;
+    width : 40ch; /* one line contain aprox 40 words */
+
+
+    /* fonst sized 1.5 X 
+    rem is a CSS unit relative to the font size of the root (html) element.
+    
+    em is relative to its parent element's font size, while rem is relative to the root (html) element's font size
+    */
+}
