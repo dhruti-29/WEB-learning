@@ -1,0 +1,42 @@
+*{
+    /* this whould applicable to every where */
+   
+   
+}
+
+button , input , textara, select {
+    font : inherit;
+}
+body{
+    font-size : 22px;
+    border: 3px solid blue;
+}
+
+main{
+    font-family: monospace;
+}
+
+h1 , h2{
+    font-family: monospace;
+    color : rgb(255, 128, 0);
+}
+p{
+    color: rgb(17, 6, 32);
+}
+p{
+    color:brown;
+    /* last whould be apply */
+}
+.highlights{
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+.gray{
+color:gray;
+
+}
+
+#second{
+    font-stle :italic;
+}
