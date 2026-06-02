@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* Root Font Size */
+html{
+    font-size:16px;
+}
+
+/* px */
+.px-box{
+    width:300px;
+    height:100px;
+    border:2px solid black;
+    margin-bottom:20px;
+}
+
+/* rem */
+.rem-text{
+    font-size:2rem; /* 2 × 16 = 32px */
+}
+
+/* em */
+.parent{
+    font-size:20px;
+}
+
+.em-text{
+    font-size:2em; /* 2 × 20 = 40px */
+}
+
+/* Percentage */
+.percent-box{
+    width:50%;
+    border:2px solid red;
+    margin-bottom:20px;
+}
+
+/* Viewport Width
+
+vw = Relative to the viewport (screen) width
+
+vh = Relative to the viewport (screen) height
+
+min-width = Sets the minimum width limit
+
+max-width = Sets the maximum width limit
+
+min-height = Sets the minimum height limit
+
+max-height = Sets the maximum height limit
+
+overflow: auto = Shows a scrollbar only when needed
+``` 
+
+*/
+.vw-box{
+    width:50vw;
+    border:2px solid blue;
+    margin-bottom:20px;
+}
+
+/* Viewport Height */
+.vh-box{
+    height:20vh;
+    border:2px solid green;
+    margin-bottom:20px;
+}
+
+/* Min & Max Width */
+.responsive-box{
+    width:80%;
+    min-width:200px;
+    max-width:600px;
+    border:2px solid orange;
+    margin-bottom:20px;
+}
+
+/* Min & Max Height */
+.height-box{
+    min-height:100px;
+    max-height:200px;
+    border:2px solid purple;
+    overflow:auto;
+}
+
+</style>
+</head>
+<body>
+
+<h1>CSS Units & Sizes Demo</h1>
+
+<!-- PX -->
+<div class="px-box">
+    Width: 300px | Height: 100px
+</div>
+
+<!-- REM -->
+<p class="rem-text">
+    This text is 2rem
+</p>
+
+<!-- EM -->
+<div class="parent">
+    Parent Font Size = 20px
+    <p class="em-text">
+        This text is 2em (40px)
+    </p>
+</div>
+
+<!-- Percentage -->
+<div class="percent-box">
+    Width: 50% of parent
+</div>
+
+<!-- VW -->
+<div class="vw-box">
+    Width: 50vw (50% of screen width)
+</div>
+
+<!-- VH -->
+<div class="vh-box">
+    Height: 20vh (20% of screen height)
+</div>
+
+<!-- Min Width / Max Width -->
+<div class="responsive-box">
+    Responsive Box <br>
+    min-width: 200px <br>
+    max-width: 600px
+</div>
+
+<!-- Min Height / Max Height -->
+<div class="height-box">
+    This box uses min-height and max-height.
+    Add more text here to test scrolling when content exceeds max-height.
+</div>
+
+</body>
+</html>
