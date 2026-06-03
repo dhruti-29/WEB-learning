@@ -1,0 +1,31 @@
+
+body{
+    padding-inline: 10%;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+main{
+    opacity: 0.9;
+}
+a{
+    /*text-decoration: none;
+    cursor:cell;
+    color : blue; */
+    padding:10px;
+color: blue;
+}
+/*a:visited {
+    color:brown;
+}*/
+
+
+a:hover , a:focus{
+   
+  color :aquamarine;
+  background: silver;
+}
+a:active{
+    color:red;
+}
+
+/* a - visited - hover - active */
