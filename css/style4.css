@@ -2,7 +2,7 @@
 
     margin : 0;
     padding : 0;
-    box-sizzing: border-box;
+    box-sizzing : border-box;
 }
 body{
     width :100%;
@@ -42,3 +42,6 @@ p{
     em is relative to its parent element's font size, while rem is relative to the root (html) element's font size
     */
 }
+
+
+
