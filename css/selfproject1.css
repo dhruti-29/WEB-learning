@@ -1,0 +1,97 @@
+.first{
+    border:  30px solid white;
+    height: 600px;
+    width: 500px;
+margin: 100px;
+transition: 0.5s;
+animation: zoom 2s infinite;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.text{
+     position: absolute;
+    top: 0%;
+    left: 40%;
+    
+    color: rgb(154, 82, 121)
+}
+h1{
+    transition: 0.3s;
+    text-decoration:underline dashed rgb(133, 63, 121);
+    text-shadow: 3%;
+}
+h1:hover{
+    font-style:initial;
+font-display: swap;
+   
+    
+}
+
+body{
+    background-image: url("https://www.lakmeindia.com/cdn/shop/files/29691_S6-8901030970481_1000x.jpg?v=1695884311");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    
+}
+
+.second{
+  border:  30px solid white;
+  animation: bounce 1s infinite;
+  margin-top: 40px;
+  margin-left: 1200px;
+  margin-right: 40px;
+  
+}
+
+.second:hover{
+    animation: shake 0.1s;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+
+    25%{
+        transform: translateX(-5px);
+    }
+
+    50%{
+        transform: translateX(5px);
+    }
+
+    75%{
+        transform: translateX(-5px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.ticker{
+    margin-top: 0;
+   
+   width: 100%;
+    height: 100px;
+    background-color: pink;   
+     display: flex;
+      overflow: hidden;
+    align-items: center;
+}
+
+.ticker span{
+    white-space: nowrap;
+    animation: move 2s linear infinite;
+}
+@keyframes move{
+    from{
+        transform: translateX(100%);
+    }
+
+    to{
+        transform: translateX(-100%);
+    }
+}
+
