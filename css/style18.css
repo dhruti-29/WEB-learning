@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+body {
+    font: 1.5rem, "Numito", sans-serif;
+    min-height: 100vh;
+    background-color: #444;
+    background-image: radial-gradient(whitesmoke, #444);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+header,
+footer {
+    position: sticky;
+    background-color: #030303;
+    color: aliceblue;
+    text-align: center;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+nav {
+    background-color: #e81111;
+    color: #e76565;
+    padding: 0.5rem;
+    border-bottom: 0.5rem solid rgb(236, 218, 218);
+font-weight:bolder;
+justify-content:space-around;
+}
+
+nav a, nav a:visited{
+    color: black;
+}
+
+nav a:hover, nav a:focus{
+    color:hsla(0, 0%, 20%, 0.6);
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+
+/* syntax:
+@media meadia type and (condition: breakpoint){
+    
+}
+ */
+
+/* @media screen and (min-aspect-ratio: 7/4){
+/* width 7 and height 4 */
+
+/* || small */
+
+.card{
+    scroll-margin-top: 8rem;
+    width: min(100% ,350px);
+    background-color: rgb(249, 246, 242);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card figure{
+    display: flex;
+    border-radius: 50%;
+}
+
+.card img{
+    border: 5px double #333;
+    border-radius: 50%;
+}
+
+.card figcaption{
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+@media screen and (min-width: 576px) {
+    body {
+        background-color: rgb(119, 229, 229);
+        background-image: radial-gradient(whitesmoke, rgb(107, 211, 211));
+    }
+
+    
+
+}

@@ -1,0 +1,56 @@
+/* https://flexboxfroggy.com/ */
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "roboto";
+    
+    min-height: 100vh;
+    padding: 20px;
+}
+.container{
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline:auto;
+    border: 1px solid black;
+    display: flex;
+    gap:6rem;
+    /* for gap bettwwen two num */
+    justify-content:space-evenly;
+    align-items: flex-end; 
+    /* for starting and ending porson */
+flex-direction: row;
+ flex-flow: row wrap;  /*  page according flexible  
+align-content: space-end; 
+}*/
+}
+.box{
+
+    min-width: 100px;
+    height: 100px;
+    background-color: rgb(11, 11, 10);
+    color: antiquewhite;
+    font-size: 2rem;
+    padding: 0.5rem;
+ display: flex;
+    justify-content: center;
+    align-items: center;
+   /*  flex-grow: 1; */
+    /* flex-basis: 100px; */
+}
+ 
+.box:nth-child(2){
+    /* flex-grow: 2; num2 become large with comapre to num1
+} */
+
+ /* flex-shrink: 2;   *//*num2 is smaller than num1 */
+flex: 2 2 150px;
+order: -1;  /* second number become last number  */
+
+}
+

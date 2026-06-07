@@ -1,0 +1,99 @@
+
+/* begin reset */
+*{
+    margin : 0;
+    padding :0;
+    box-sizing: border-box;
+}
+
+img{ 
+    display: block;
+}
+/* end reset */
+
+/* utility classes */ 
+.nowrap{
+    white-space: nowrap; /* prevents text from wrapping onto a new line. */
+}
+.offscreen{
+    position: absolute;  
+    /* using this caption hide */
+    left: -100000px;
+}
+/* end utility classes */
+body{
+
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+}
+.container{
+ 
+    background-image: url('https://www.shutterstock.com/image-photo/perfect-random-click-sunset-nature-260nw-2420885785.jpg');
+
+background-repeat: repeat;
+ /* background-blend-mode: lighten;  */
+/*  makes the background image appear lighter by blending it with the background color.
+ */ 
+ background-size: cover;
+/*  makes the background image fill the entire container while maintaining its aspect ratio, even if part of the image gets cropped.
+ */
+}
+
+.hero{
+    border-bottom: 2px solid palevioletred;
+    display: flex;
+    
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: center;
+  background-color: hsla(0, 0%, 100%, 0.0035);
+    
+    /* background-color: rgb(199, 113, 113);
+    background-image: url('https://www.shutterstock.com/image-photo/perfect-random-click-sunset-nature-260nw-2420885785.jpg');
+
+background-repeat: repeat;
+ /* background-blend-mode: lighten;  */
+/*  makes the background image appear lighter by blending it with the background color.
+
+ background-size: cover;
+/*  makes the background image fill the entire container while maintaining its aspect ratio, even if part of the image gets cropped.
+ */ 
+
+
+}
+
+
+.figure{
+        width:35px;
+        height:auto;
+}
+
+.h1{
+    font-size: 100px;
+    color:rgb(194, 233, 211);
+    text-shadow: 2px 20px 5px black; /* text-shadow: horizontal vertical blur color; */
+/* background-color: rgba(5, 0, 0, 0.292);
+padding: 0.25rem;
+border-radius: 100px; */
+
+}
+.figure img{
+    width: 100%;
+    height: auto;
+    min-width: 600px;
+     border: 5px solid rgb(98, 56, 56); 
+     border-radius: 50%;
+
+}
+.example{
+    margin-top: 1rem;
+    padding-left: 20px;
+    border: 5px solid rgb(191, 126, 126); 
+
+}
+
+.example img{
+    width: 255;
+    height: auto;
+    
+}
