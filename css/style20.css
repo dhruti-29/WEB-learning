@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+--FF:"Numito", sans-serif;
+    --BGCOLOR: #444;
+    --ALT-BGCOLOR: #030303;
+    --RADIAL-COLOR: whitesmoke;
+    --LIGHT-COLOR: whitesmoke;
+    --DARK-COLOR: rgb(236, 218, 218);
+
+
+}
+
+
+body {
+    font: 1.5rem, var(--FF);
+    min-height: 100vh;
+    background-color: var(--BGCOLOR);
+    background-image: radial-gradient(var(--RADIAL-COLOR), var(--BGCOLOR));
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+nav,
+footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+header,
+footer {
+    position: sticky;
+    background-color: var(--ALT-BGCOLOR);
+    color: aliceblue;
+
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+nav {
+    background-color: #b87142;
+    color: rgb(199, 178, 165);
+    padding: 0.5rem;
+    border-bottom: 0.5rem solid var(--DARK-COLOR);
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* syntax:
+@media meadia type and (condition: breakpoint){
+    
+}
+ */
+
+/* @media screen and (min-aspect-ratio: 7/4){
+/* width 7 and height 4 */
+
+/* || small */
+
+
+
+
+
+
