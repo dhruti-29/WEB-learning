@@ -1,28 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-
 /* || RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-
 /* || UTILITY CLASSES */
 .nowrap {
   white-space: nowrap;
 }
-
 /* || GENERAL STYLES */
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font: 1.5rem "Nunito", sans-serif;
   min-height: 100vh;
@@ -31,7 +26,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 header,
 footer {
   position: sticky;
@@ -39,11 +33,9 @@ footer {
   color: whitesmoke;
   text-align: center;
 }
-
 header {
   top: 0;
 }
-
 nav {
   background-color: #fff;
   padding: 0.5rem;
@@ -58,7 +50,6 @@ nav {
 nav a:any-link{
   color: #000;
 }
-
 nav :is(a:hover ,a:focus) {
   color: hsla(0, 0%, 20%, 0.6);
 }
