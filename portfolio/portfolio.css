@@ -1,0 +1,53 @@
+
+
+.profile{
+    width: 110px;
+    height: 110px;
+    background-image: url("./img/dhruti\ copy.jpeg");
+   background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: inherit;
+     border-radius: 50%;
+    border: 4px solid white;
+ position: absolute;
+    right: 0;
+    top: 0;
+    
+
+    
+
+}
+
+
+body{
+width: 15000px;
+    height: 15000px;
+background: linear-gradient(rgb(157, 100, 156), rgb(232, 220, 228));
+background-repeat: no-repeat;
+background-size: cover;
+
+    
+}
+
+
+.box{
+
+    width: 500px;
+    
+    color: bisque;
+    
+    align-content: center;
+}
+
+.heading{
+text-align: center;
+position: absolute;
+left: 70px;
+right: 200px;
+
+top: 900px;
+
+
+
+   
+}
