@@ -104,6 +104,18 @@ body {
 
 }
 
+.ids{
+
+    position: absolute;
+    left: 200px;
+    top: 3px
+}
+.ids a{
+    color:bisque;
+    font-size: 1.5rem;
+
+}
+
 .line {
     width: 3000px;
     height: 1px;
@@ -377,9 +389,6 @@ body {
 
 
 .bigbox {
-
-
-
     width: 600px;
     height: 200px;
     background-color: rgb(156, 115, 156);
