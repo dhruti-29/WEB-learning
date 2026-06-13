@@ -9,6 +9,7 @@
     position: absolute;
     right: 0;
     top: 3px;
+    border: 5px solid bisque;
 
 }
 
@@ -37,32 +38,43 @@ body {
     left: 70px;
     right: 200px;
     top: 900px;
-animation: colorChange 2s infinite;
+    animation: colorChange 4s infinite;
 
 }
 
-@keyframes colorChange{
+@keyframes colorChange {
 
-    0%{ color:rgb(216, 215, 211); }
+    0% {
+        color: rgb(221, 172, 172);
+    }
 
-    20%{ color:rgb(236, 184, 236); }
+    20% {
+        color: rgb(156, 115, 156);
+    }
 
-    25%{ color:rgb(233, 169, 233); }
+    25% {
+        color: rgb(246, 213, 225);
+    }
 
-    50%{ color:rgb(233, 138, 233); }
+    50% {
+        color: rgb(187, 145, 160);
+    }
 
-    100%{ color:rgb(225, 109, 217); }
+    100% {
+        color: rgb(47, 27, 47);
+    }
 }
+
 .heading::first-letter {
     font-size: 17rem;
 }
 
-.das{
+.das {
     color: bisque;
-    font-size: 3rem;
-  position: absolute;
-    left: 190px;
-    top: 3px;
+    font-size: 2rem;
+    position: absolute;
+
+
 }
 
 .menu div {
@@ -92,8 +104,6 @@ animation: colorChange 2s infinite;
 
 }
 
-
-
 .line {
     width: 3000px;
     height: 1px;
@@ -102,36 +112,37 @@ animation: colorChange 2s infinite;
 }
 
 
+.emoji span {
 
-.emoji span{
-
-position: absolute;
-font-size: 4rem;
-animation:first 6s ease infinite;
- opacity: 0.3;
+    position: absolute;
+    font-size: 4rem;
+    animation: first 6s ease infinite;
+    opacity: 0.3;
     filter: blur(1px);
 }
 
-.emoji span:nth-child(1){
+.emoji span:nth-child(1) {
     left: 10%;
     animation-duration: 5s;
 }
-.emoji span:nth-child(2){
+
+.emoji span:nth-child(2) {
     left: 50%;
     animation-duration: 3ms;
 }
-.emoji span:nth-child(3){
+
+.emoji span:nth-child(3) {
     left: 90%;
     animation-duration: 7s;
 }
 
-@keyframes first{
+@keyframes first {
 
-    from{
+    from {
         transform: translatex(-100vh);
     }
 
-    to{
+    to {
         transform: translateY(-300vh);
     }
 }
@@ -139,49 +150,54 @@ animation:first 6s ease infinite;
 
 
 
-.emoji2 span{
+.emoji2 span {
 
-position: absolute;
-font-size: 7dvh;
-animation:second 7s cubic-bezier(0.42, 0, 0.58, 1) infinite;
- opacity: 0.3;
+    position: absolute;
+    font-size: 7dvh;
+    animation: second 7s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    opacity: 0.3;
     filter: blur(4px);
 }
 
-.emoji2 span:nth-child(1){
+.emoji2 span:nth-child(1) {
     left: 10%;
     animation-duration: 10s;
-    
-   
+
+
 }
-.emoji2 span:nth-child(2){
+
+.emoji2 span:nth-child(2) {
     left: 50%;
     animation-duration: 4s;
 }
-.emoji2 span:nth-child(3){
+
+.emoji2 span:nth-child(3) {
     left: 90%;
     animation-duration: 4s;
 }
-.emoji2 span:nth-child(4){
+
+.emoji2 span:nth-child(4) {
     left: 90%;
     animation-duration: 9s;
 }
-.emoji2 span:nth-child(5){
-    left: 90%;
-    animation-duration: 6s;
-}
-.emoji2 span:nth-child(6){
+
+.emoji2 span:nth-child(5) {
     left: 90%;
     animation-duration: 6s;
 }
 
-@keyframes second{
+.emoji2 span:nth-child(6) {
+    left: 90%;
+    animation-duration: 6s;
+}
 
-    from{
+@keyframes second {
+
+    from {
         transform: translateX(140vh);
     }
 
-    to{
+    to {
         transform: translateY(120vh);
     }
 }
@@ -191,158 +207,229 @@ animation:second 7s cubic-bezier(0.42, 0, 0.58, 1) infinite;
 
 
 
-.emoji3 span{
+.emoji3 span {
 
-position: absolute;
-font-size: 6rem;
-animation:third 8s ease-in infinite;
- opacity: 0.3;
+    position: absolute;
+    font-size: 6rem;
+    animation: third 8s ease-in infinite;
+    opacity: 0.3;
     filter: blur(1.5px);
 }
 
-.emoji3 span:nth-child(1){
+.emoji3 span:nth-child(1) {
     left: 10%;
     animation-duration: 5s;
 }
-.emoji3 span:nth-child(2){
+
+.emoji3 span:nth-child(2) {
     left: 55%;
     animation-duration: 5s;
 }
-.emoji3 span:nth-child(3){
+
+.emoji3 span:nth-child(3) {
     left: 90%;
     animation-duration: 6s;
 }
-.emoji3 span:nth-child(4){
+
+.emoji3 span:nth-child(4) {
     left: 90%;
     animation-duration: 7s;
 }
-.emoji3 span:nth-child(5){
+
+.emoji3 span:nth-child(5) {
     left: 90%;
     animation-duration: 7s;
 }
-.emoji3 span:nth-child(6){
+
+.emoji3 span:nth-child(6) {
     left: 90%;
     animation-duration: 5s;
 }
 
-@keyframes third{
+@keyframes third {
 
-    from{
-        transform: translate(100vh,100vw);
+    from {
+        transform: translate(100vh, 100vw);
     }
 
-    to{
-        transform: translateY(30vh,100vw);
+    to {
+        transform: translateY(30vh, 100vw);
     }
 }
 
 
-.emoji4 span{
+.emoji4 span {
 
-position: absolute;
-font-size: 7dvh;
-animation:fourth 3s cubic-bezier(0.9, 0.45, 0.95, 0) infinite;
- opacity: 0.3;
+    position: absolute;
+    font-size: 7dvh;
+    animation: fourth 3s cubic-bezier(0.9, 0.45, 0.95, 0) infinite;
+    opacity: 0.3;
     filter: blur(2.5px);
 }
 
-.emoji4 span:nth-child(1){
+.emoji4 span:nth-child(1) {
     left: 10%;
     animation-duration: 10s;
-    
-   
+
+
 }
-.emoji4 span:nth-child(2){
+
+.emoji4 span:nth-child(2) {
     left: 50%;
     animation-duration: 8s;
 }
-.emoji4 span:nth-child(3){
+
+.emoji4 span:nth-child(3) {
     left: 90%;
     animation-duration: 8s;
 }
-.emoji4 span:nth-child(4){
+
+.emoji4 span:nth-child(4) {
     left: 90%;
     animation-duration: 9s;
 }
-.emoji4 span:nth-child(5){
+
+.emoji4 span:nth-child(5) {
     left: 90%;
     animation-duration: 9s;
 }
-.emoji4 span:nth-child(6){
+
+.emoji4 span:nth-child(6) {
     left: 90%;
     animation-duration: 6s;
 }
 
-@keyframes fourth{
+@keyframes fourth {
 
-    0%{
-        transform: translate(0,0);
+    0% {
+        transform: translate(0, 0);
     }
 
-    25%{
-        transform: translate(300px,-50px);
+    25% {
+        transform: translate(300px, -50px);
     }
 
-    50%{
-        transform: translate(600px,-50px);
+    50% {
+        transform: translate(600px, -50px);
     }
 
-    75%{
-        transform: translate(-900px,30px);
+    75% {
+        transform: translate(-900px, 30px);
     }
 
-    100%{
-        transform: translate(-1200px,2px);
+    100% {
+        transform: translate(-1200px, 2px);
     }
 }
 
 
-.emoji5 span{
+.emoji5 span {
 
-position: absolute;
-font-size: 7dvh;
-animation:fifth 3s cubic-bezier(0.9, 0.45, 0.95, 0) infinite;
- opacity: 0.3;
+    position: absolute;
+    font-size: 7dvh;
+    animation: fifth 3s cubic-bezier(0.9, 0.45, 0.95, 0) infinite;
+    opacity: 0.3;
     filter: blur(2.5px);
 }
 
-.emoji5 span:nth-child(1){
+.emoji5 span:nth-child(1) {
     left: 10%;
     animation-duration: 10s;
-    
-   
+
+
 }
-.emoji5 span:nth-child(2){
+
+.emoji5 span:nth-child(2) {
     left: 50%;
     animation-duration: 8s;
 }
-.emoji5 span:nth-child(3){
+
+.emoji5 span:nth-child(3) {
     left: 90%;
     animation-duration: 8s;
 }
-.emoji5 span:nth-child(4){
+
+.emoji5 span:nth-child(4) {
     left: 90%;
     animation-duration: 9s;
 }
-.emoji5 span:nth-child(5){
+
+.emoji5 span:nth-child(5) {
     left: 90%;
     animation-duration: 9s;
 }
-.emoji5 span:nth-child(6){
+
+.emoji5 span:nth-child(6) {
     left: 90%;
     animation-duration: 6s;
 }
 
-@keyframes fifth{
+@keyframes fifth {
 
-    from{
+    from {
         transform: translate(-100vw, 100vh);
     }
 
-    to{
+    to {
         transform: translate(100vw, -100vh);
     }
 }
 
 
+.bigbox {
 
+
+
+    width: 600px;
+    height: 200px;
+    background-color: rgb(156, 115, 156);
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    z-index: 7;
+    border-radius: 0%;
+
+
+}
+
+
+.cs {
+
+    color: rgb(65, 26, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+
+}
+
+.click {
+    font-size: 1.3rem;
+    color: rgb(11, 11, 11);
+    font-style: normal;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link {
+
+    color: rgb(229, 230, 236);
+    font-style: normal;
+    font-size: 2rem;
+    display: flex;
+    justify-content: end;
+    text-decoration: underline solid rgb(25, 24, 36);
+    background: rgb(187, 145, 160);
+    padding: 10px 90px;
+    border-radius: 30px;
+    transition: 0.3s;
+
+}
+
+
+.link:hover {
+    transform: scale(1.1);
+    transform: rotate(360deg);
+    color: rgb(65, 26, 59);
+}
