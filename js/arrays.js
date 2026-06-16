@@ -18,9 +18,9 @@ console.log(`avg marks of the class = ${avg}`); */
 
 
 
-/* let guj=["suart" , "jnd"];
+ let guj=["suart" , "jnd"];
 let mp=["mumabai" ,"lonavala"];
 
 let india =guj.concat(mp);
 console.log(india);
- */
+ 
