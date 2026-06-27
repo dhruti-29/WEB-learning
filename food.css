@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Noto Sans Gujarati',sans-serif;
+    background:#FFF8F1;
+    overflow-x:hidden;
+    color:#222;
+}
+
+.bg-image{
+    position:fixed;
+    inset:0;
+    background:url("https://images.unsplash.com/photo-1547592180-85f173990554");
+    background-size:cover;
+    background-position:center;
+    filter:blur(20px);
+    opacity:0.12;
+    z-index:-1;
+}
+
+.announcement{
+    background:#f4b400;
+    overflow:hidden;
+    padding:10px 0;
+    font-weight:600;
+}
+
+.marquee{
+    white-space:nowrap;
+    animation:move 15s linear infinite;
+}
+
+@keyframes move{
+    from{
+        transform:translateX(100%);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
+
+.hero{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.bhakhri-icon{
+    font-size:60px;
+    animation:rotate 10s linear infinite;
+}
+
+@keyframes rotate{
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.hero h1{
+    color:#c0392b;
+    font-size:40px;
+    margin-top:10px;
+}
+
+.hero p{
+    margin:15px 0;
+}
+
+.hero button{
+    background:#c0392b;
+    color:white;
+    border:none;
+    padding:14px 30px;
+    border-radius:40px;
+    font-size:16px;
+}
+
+.categories{
+    display:flex;
+    gap:10px;
+    overflow:auto;
+    padding:15px;
+}
+
+.categories button{
+    border:none;
+    background:white;
+    padding:12px 22px;
+    border-radius:30px;
+    cursor:pointer;
+    white-space:nowrap;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.categories .active{
+    background:#c0392b;
+    color:white;
+}
+
+.toggle-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin:20px;
+}
+
+.switch{
+    position:relative;
+    width:60px;
+    height:32px;
+}
+
+.switch input{
+    display:none;
+}
+
+.slider{
+    position:absolute;
+    inset:0;
+    background:#ccc;
+    border-radius:30px;
+}
+
+.slider::before{
+    content:"";
+    width:24px;
+    height:24px;
+    background:white;
+    border-radius:50%;
+    position:absolute;
+    top:4px;
+    left:4px;
+    transition:.3s;
+}
+
+input:checked + .slider{
+    background:#c0392b;
+}
+
+input:checked + .slider::before{
+    transform:translateX(28px);
+}
+
+.container{
+    padding:20px;
+}
+
+.menu-card{
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,.75);
+    border:1px solid rgba(255,255,255,.4);
+    border-radius:25px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.menu-card h2{
+    color:#c0392b;
+    margin-bottom:20px;
+}
+
+.item{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 0;
+    border-bottom:1px solid #eee;
+}
+
+.price{
+    color:#c0392b;
+    font-weight:bold;
+}
+
+.item:last-child{
+    border:none;
+}
+
+@media(max-width:600px){
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .menu-card{
+        padding:20px;
+    }
+}
