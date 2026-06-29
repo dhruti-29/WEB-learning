@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Snack Center</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="food.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="bg-image"></div>
+
+    <!-- Announcement -->
+    <div class="announcement">
+        <div class="marquee">
+            🥜 ૧૦૦% શુદ્ધ સીંગતેલમાં બનાવેલું • ગરમ અને તાજું • સ્વાદિષ્ટ ગુજરાતી નાસ્તો
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <div class="bhakhri-icon">🫓</div>
+
+        <h1>ગુજરાતી નાસ્તા</h1>
+
+        <p>પરંપરાગત સ્વાદ • આધુનિક અનુભવ</p>
+
+        <button>ઓર્ડર કરો</button>
+
+    </section>
+
+    <!-- Categories -->
+
+    <div class="categories">
+
+        <button onclick="showCategory('bhakhri')" class="active">
+            ભાખરી
+        </button>
+
+        <button  id="#thepla">
+            થેપલા
+        </button>
+
+        <button onclick="showCategory('maggi')">
+            મેગી
+        </button>
+
+        <button onclick="showCategory('tea')">
+            ચા
+        </button>
+
+    </div>
+
+    <!-- Cheese Toggle -->
+
+    <div class="toggle-box">
+
+        <span>Regular</span>
+
+        <label class="switch">
+            <input type="checkbox" id="cheeseToggle">
+            <span class="slider"></span>
+        </label>
+
+        <span>Cheese +₹20</span>
+
+    </div>
+
+    <!-- MENU -->
+
+    <div class="container">
+
+        <!-- Bhakhri -->
+
+        <div id="bhakhri" class="menu-card">
+
+            <h2>🫓 ભાખરી</h2>
+
+            <div class="item" data-regular="20" data-cheese="40">
+                <span>ફ્રાય ભાખરી</span>
+                <span class="price">₹20</span>
+            </div>
+
+            <div class="item" data-regular="25" data-cheese="45">
+                <span>સેવ ભાખરી</span>
+                <span class="price">₹25</span>
+            </div>
+
+            <div class="item" data-regular="30" data-cheese="50">
+                <span>મસાલા ભાખરી</span>
+                <span class="price">₹30</span>
+            </div>
+
+        </div>
+
+        <!-- Thepla -->
+
+        <div id="thepla" class="menu-card">
+
+            <h2>🌮 થેપલા</h2>
+
+            <div class="item" data-regular="20" data-cheese="40">
+                <span>ચીઝ થેપલા</span>
+                <span class="price">₹20</span>
+            </div>
+
+            <div class="item" data-regular="30" data-cheese="50">
+                <span>મસાલા થેપલા</span>
+                <span class="price">₹30</span>
+            </div>
+
+        </div>
+
+        <!-- Maggie -->
+
+        <div id="maggi" class="menu-card">
+
+            <h2>🍜 મેગી</h2>
+
+            <div class="item" data-regular="40" data-cheese="60">
+                <span>મેગી</span>
+                <span class="price">₹40</span>
+            </div>
+
+            <div class="item" data-regular="50" data-cheese="70">
+                <span>બટર મેગી</span>
+                <span class="price">₹50</span>
+            </div>
+
+        </div>
+
+        <!-- Tea -->
+
+        <div id="tea" class="menu-card">
+
+            <h2>☕ ચા અને કોફી</h2>
+
+            <div class="item">
+                <span>ચા</span>
+                <span class="price">₹30</span>
+            </div>
+
+            <div class="item">
+                <span>ગરમ દૂધ</span>
+                <span class="price">₹30</span>
+            </div>
+
+            <div class="item">
+                <span>કોફી</span>
+                <span class="price">₹20</span>
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
